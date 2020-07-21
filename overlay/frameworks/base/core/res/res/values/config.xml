@@ -355,6 +355,11 @@
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">106px</dimen>
+
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+        manually by the user. Off by default, since the expected haptic feedback may not be
+        available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
     
     
 </resources>
