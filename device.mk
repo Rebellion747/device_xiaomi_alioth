@@ -5,6 +5,7 @@
 #
 
 # Inherit from sm8250-common
+
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
 
@@ -23,7 +24,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay 
-    
+    $(LOCAL_PATH)/overlay
+
 PRODUCT_BOARD_PLATFORM := kona
-      PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_USES_QCOM_HARDWARE := true
