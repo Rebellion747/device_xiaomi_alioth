@@ -2,22 +2,21 @@
 
 # User Defined Stuff
 
-folder="/home/sukeerat/havoc"
-rom_name="Havoc-OS-v4.5"*.zip
+folder="/home/sukeerat/dot"
+rom_name="Dot"*.zip
 gapps_command="WITH_GAPPS"
 with_gapps="yes"
-build_type="userdebug"
+build_type="user"
 device_codename="alioth"
-use_brunch="yes"
+use_brunch="bacon"
 OUT_PATH="$folder/out/target/product/${device_codename}"
-lunch="havoc"
+lunch="dot"
 user="sukeerat"
-tg_username="iron time"
-
+tg_username="@dot_alioth"
 
 # make_clean="yes"
 # make_clean="no"
-make_clean="installclean"
+# make_clean="installclean"
 
 # Rom being built
 
@@ -72,7 +71,7 @@ ccache -M 75G
 
 source build/envsetup.sh
 export WITH_GMS=true
-export SELINUX_IGNORE_NEVERALLOWS=true
+export SELINUX_IGNORE_NEVERALLOWS=false
 export SKIP_ABI_CHECKS=true
 
 if [ "$with_gapps" = "yes" ];
@@ -120,7 +119,7 @@ fi
 
 if [ "$use_brunch" = "bacon" ];
 then
-mka  bacon -j$(nproc --all) 
+make  bacon -j$(nproc --all) 
 fi
 
 END=$(date +%s)

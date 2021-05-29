@@ -5,13 +5,16 @@
 #
 
 # Inherit from alioth device
+
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_alioth
+
+PRODUCT_NAME := dot_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_BRAND := POCO
 PRODUCT_MANUFACTURER := Xiaomi

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_alioth.mk
+    $(LOCAL_DIR)/dot_alioth.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_alioth-user \
-    havoc_alioth-userdebug \
-    havoc_alioth-eng
+    dot_alioth-user \
+    dot_alioth-userdebug \
+    dot_alioth-eng
